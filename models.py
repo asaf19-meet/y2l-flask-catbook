@@ -6,5 +6,6 @@ Base = declarative_base()
 class Cat(Base):
     __tablename__ = "cats"
     id = Column(Integer, primary_key=True)
+    votes = Column(Integer)
     name = Column(String)
     

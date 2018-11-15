@@ -6,9 +6,10 @@
   </head>
   <body>
     <h1>this is the profile page of cat number {{cat.id}} and his name is {{cat.name}} </h1>
-    <button type="button"
-    >vote!</button>
-    <p>votes =</p>
+    <form action="/cat/{{id}}" method="POST">
+      <input type="submit" value="Vote">
+    </form>
+    <p>votes = {{cat.votes}}</p>
 
   </body>
 </html>
