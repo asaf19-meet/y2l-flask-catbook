@@ -5,8 +5,8 @@
       <title>{{cat.id}} cat</title>
   </head>
   <body>
-    <h1>this is the profile page of cat number {{cat.id}} and his name is {{cat.name}} </h1>
-    <form action="/cat/{{id}}" method="POST">
+    <h1>this is the profile page of {{cat.name}} </h1>
+    <form action="/cats/{{cat.id}}" method="POST">
       <input type="submit" value="Vote">
     </form>
     <p>votes = {{cat.votes}}</p>

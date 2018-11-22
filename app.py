@@ -16,6 +16,7 @@ def catbook_profile(cat_id):
 		return render_template(
 		'cat.html',cat = cat)
 	else:
+		cat = get_cat_by_id(cat_id)
 		update_votes(cat_id)
 		return render_template(
 		'cat.html',cat = cat)
